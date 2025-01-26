@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: black;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #222;
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        #about h2 {
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        #about p {
+            font-size: 1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        #skills h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .skill {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            width: 100px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .skill:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        #contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        #contact p {
+            text-align: center;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        #contact a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="Gayatri-Nehe.jpg" alt="Profile Picture">
+        <h2>About Me</h2>
+        <p>Hello! My name is Gayatri Nehe. and I am a passionate and driven BE-IT student with a keen interest in Full Stack Web Development. My journey into technology began with a curiosity to understand how things work behind the scenes of the web. Over the years, this curiosity has transformed into a profound love for coding and creating solutions that make a real-world impact.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="blog website.jpg" alt="Blog Website">
+                <h3>Personal Blog Website</h3>
+                <p>A responsive blog site with filtering options, interactive comments, and a contact form.</p>
+            </div>
+            <div class="project">
+                <img src="e-commerce.jpg" alt="E-Commerce Store">
+                <h3>E-Commerce Store</h3>
+                <p>An online shopping platform with React and Node.js, featuring secure payment and authentication.</p>
+            </div>
+            <div class="project">
+                <img src="weather1.jpg" alt="Weather Dashboard">
+                <h3>Weather Dashboard</h3>
+                <p>A real-time weather tracker with API integration and a dynamic user interface.</p>
+            </div>
+            <div class="project">
+                <img src="social.jpg" alt="Social Media Platform">
+                <h3>Social Media Platform</h3>
+                <p>A feature-packed social media platform where users can connect, share posts, and interact with each other.</p>
+            </div>
+            <div class="project">
+                <img src="online.jpg" alt="Online Learning Platform">
+                <h3>Online Learning Platform
+                </h3>
+                <p>An e-learning web app that connects students with online courses, offering a platform for both learners and instructors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React.js</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">express.js</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:gayatrinehe6@gmail.com">gayatrinehe6@gmail.com</a></p>
+        <p>Phone: (+91) 8799943886</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gayatri-nehe-8139a0303">My LinkedIn</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Gayatri Nehe. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
